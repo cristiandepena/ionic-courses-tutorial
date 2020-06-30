@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+  <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css" />
+
+<body>
+
+  <ion-app>
+    <ion-header>
+      <ion-toolbar color="primary">
+        <ion-title>My Courses</ion-title>
+      </ion-toolbar>
+    </ion-header>
+
+    <ion-content class="ion-padding">
+      <ion-grid>
+        <ion-row>
+          <ion-col size-xl="6" offset-xl="3">
+            <ion-item>
+              <ion-label position="floating">Course Name</ion-label>
+              <ion-input id="courseName" type="text" placeholder="Ex.:Ionic 101"></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-label position="floating">Course Rating</ion-label>
+              <ion-input id="courseRating" type="number" value="1" min="1" max="5"></ion-input>
+            </ion-item>
+            <ion-button id="cancel" fill="outline" color="danger"><ion-icon slot="end" name="close-outline"></ion-icon>Cancel</ion-button>
+            <ion-button id="add"><ion-icon slot="end" name="add-outline"></ion-icon>Add</ion-button>
+            
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col size-xl="6" offset-xl="3">
+          <ion-list id="courseList">
+          </ion-list>
+        </ion-col>
+        </ion-row>
+      </ion-grid>
+
+
+
+    </ion-content>
+  </ion-app>
+
+<script src="app.js"></script>
+</body>
+
+</html>
