@@ -1,10 +1,17 @@
 {
-    "buildpacks": [
-    {
-        "url": "heroku/nodejs"
+    "name": "TMM",
+    "scripts": {
     },
-    {
-        "url": "https://github.com/heroku/heroku-buildpack-static"
-    }
-]
-}
+    "env": {},
+    "formation": {
+      "web": {
+        "quantity": 1
+      }
+    },
+    "addons": [],
+    "buildpacks": [
+      {
+        "url": "https://github.com/heroku/heroku-buildpack-static.git"
+      }
+    ]
+  }
